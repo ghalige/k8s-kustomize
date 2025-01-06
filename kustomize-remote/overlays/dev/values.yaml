@@ -1,0 +1,10 @@
+grafana:
+  adminPassword: "devpassword"
+  service:
+    type: ClusterIP
+  ingress:
+    enabled: true
+    hosts:
+      - grafana.dev.local
+    path: /
+    tls: false  # No TLS in dev

@@ -1,0 +1,11 @@
+grafana:
+  adminPassword: "prodpassword"
+  service:
+    type: LoadBalancer  # Production typically uses LoadBalancer
+  ingress:
+    enabled: true
+    hosts:
+      - grafana.prod.local
+    path: /
+    tls: true  # Enable TLS for production
+    tlsSecret: grafana-tls-secret  # Reference to a TLS secret for production

@@ -1,0 +1,9 @@
+resources:
+  - https://charts.bitnami.com/bitnami/grafana-7.6.5.tgz  # Grafana remote Helm chart
+
+helmCharts:
+  - name: grafana
+    version: "7.6.5"
+    repo: https://charts.bitnami.com/bitnami
+    releaseName: my-grafana
+    valuesFile: ./values.yaml  # Common values file for both dev and prod

@@ -1,0 +1,9 @@
+bases:
+  - ../../base
+
+helmCharts:
+  - name: grafana
+    version: "7.6.5"
+    repo: https://charts.bitnami.com/bitnami
+    releaseName: my-grafana-prod
+    valuesFile: ./values.yaml  # Prod-specific values
