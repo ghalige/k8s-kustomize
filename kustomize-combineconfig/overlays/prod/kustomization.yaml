@@ -1,0 +1,6 @@
+resources:
+  - ../../base/app1
+  - ../../base/app2
+patchesStrategicMerge:
+  - patch-app1.yaml
+  - patch-app2.yaml

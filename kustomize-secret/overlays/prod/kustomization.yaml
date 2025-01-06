@@ -1,0 +1,8 @@
+resources:
+  - ../../base
+secretGenerator:
+  - name: app-secret  # The name of the secret we want to generate
+    literals:
+      - DATABASE_URL=prod-database-url
+      - API_KEY=prod-api-key
+    type: Opaque

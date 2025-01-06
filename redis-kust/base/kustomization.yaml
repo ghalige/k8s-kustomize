@@ -1,0 +1,10 @@
+resources:
+  - redis
+
+helmCharts:
+  - name: redis
+    version: "15.1.0"  # Use the appropriate version for your setup
+    repo: https://charts.bitnami.com/bitnami
+    releaseName: redis
+    namespace: redis
+    valuesFile: redis/redis-values.yaml

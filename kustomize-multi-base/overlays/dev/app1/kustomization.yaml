@@ -1,0 +1,5 @@
+resources:
+  - ../../../base-app1
+patchesStrategicMerge:
+  - patch-deployment.yaml
+
