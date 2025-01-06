@@ -1,0 +1,12 @@
+resources:
+  - ../../base  # Reference to the base directory
+
+validation:
+  - target:
+      version: apps/v1
+      kind: Deployment
+      name: nginx
+    validate: |
+      replicas: 1
+      imageTag: dev
+

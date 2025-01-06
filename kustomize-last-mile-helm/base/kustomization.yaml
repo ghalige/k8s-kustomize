@@ -1,0 +1,10 @@
+resources:
+  - https://charts.bitnami.com/bitnami/nginx-9.3.1.tgz  # Helm chart URL
+
+helmCharts:
+  - name: nginx
+    version: "9.3.1"
+    repo: https://charts.bitnami.com/bitnami
+    releaseName: my-nginx
+    valuesFile: ./values.yaml  # Default values.yaml for the Helm chart
+

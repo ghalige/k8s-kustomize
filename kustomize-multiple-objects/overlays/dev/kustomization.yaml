@@ -1,0 +1,7 @@
+resources:
+  - ../../base
+
+patchesStrategicMerge:
+  - nginx-deployment-patch.yaml
+  - nginx-service-patch.yaml
+

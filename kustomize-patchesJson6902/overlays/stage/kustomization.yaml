@@ -1,0 +1,15 @@
+resources:
+  - ../../base  # Reference to the base Kustomize directory
+
+patchesJson6902:
+  - target:
+      version: apps/v1
+      kind: Deployment
+      name: nginx
+    patch: |
+      - op: replace
+        path: /spec/replicas
+        value: 3
+      - op: replace
+        path: /spec/template/spec/containers/0/image
+        value: nginx:stage

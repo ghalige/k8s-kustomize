@@ -1,0 +1,10 @@
+resources:
+  - ../../base  # Reference to the base Kustomize directory
+
+helmCharts:
+  - name: nginx
+    version: "9.3.1"
+    repo: https://charts.bitnami.com/bitnami
+    releaseName: my-nginx-prod
+    valuesFile: ./values-prod.yaml  # Custom values.yaml for prod environment
+
