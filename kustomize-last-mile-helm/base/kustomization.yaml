@@ -1,3 +1,6 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+
 resources:
   - https://charts.bitnami.com/bitnami/nginx-9.3.1.tgz  # Helm chart URL
 
