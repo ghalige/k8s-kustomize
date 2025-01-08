@@ -4,5 +4,10 @@ kind: Kustomization
 bases:
   - ../../base
 
-patchesStrategicMerge:
-  - values-staging.yaml
+helmCharts:
+  - name: opensearch
+    version: "2.30.0"
+    repo: https://opensearch-project.github.io/helm-charts
+    releaseName: opensearch-staging
+    namespace: logging
+    valuesFile: ./values-staging.yaml

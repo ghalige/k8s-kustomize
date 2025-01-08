@@ -3,6 +3,21 @@ kind: Kustomization
 
 resources:
   - ../../base
+
+configMapGenerator:
+  - name: myapp-config
+    literals:
+      - MYAPP_ENV=prod
+      - MYAPP_DEBUG=false
+
+
+secretGenerator:
+  - name: myapp-secret
+    literals:
+      - DB_PASSWORD=secret_password
+    type: Opaque
+
+
 patchesStrategicMerge:
   - patch-deployment.yaml
 

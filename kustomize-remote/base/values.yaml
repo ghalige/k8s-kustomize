@@ -1,6 +1,0 @@
-grafana:
-  adminPassword: "admin123"
-  service:
-    type: ClusterIP
-  ingress:
-    enabled: false  # Default to disabled for both dev and prod

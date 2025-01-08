@@ -1,12 +1,8 @@
 resources:
   - ../../base  # Reference to the base directory
 
-validation:
-  - target:
-      version: apps/v1
-      kind: Deployment
-      name: nginx
-    validate: |
-      replicas: 3
-      imageTag: stable
+transformers:
+  - labels-transformer.yaml  # Add environment labels
+  - replicas-transformer.yaml  # Modify replica count
+
 

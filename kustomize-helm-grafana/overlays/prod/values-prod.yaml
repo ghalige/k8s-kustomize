@@ -1,0 +1,6 @@
+global:
+  imageRegistry: null
+replicas: 3
+adminUser: admin
+adminPassword: strongpassword
+

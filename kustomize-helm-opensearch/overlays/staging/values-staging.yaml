@@ -1,11 +1,2 @@
-replicas: 3
-persistence:
-  size: 20Gi
+replicas: 5
 
-resources:
-  limits:
-    memory: 2Gi
-    cpu: "1"
-  requests:
-    memory: 1Gi
-    cpu: "500m"

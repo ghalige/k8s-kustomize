@@ -1,0 +1,5 @@
+adminUser: admin
+adminPassword: admin123  # Default admin credentials
+service:
+  type: ClusterIP
+replicaCount: 1

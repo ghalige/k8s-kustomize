@@ -1,0 +1,11 @@
+apiVersion: builtin
+kind: PatchTransformer
+metadata:
+  name: replicas-transformer
+patch: |-
+  - op: replace
+    path: /spec/replicas
+    value: 2
+target:
+  kind: Deployment
+  name: nginx

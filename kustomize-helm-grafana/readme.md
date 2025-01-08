@@ -2,8 +2,8 @@ Deploy Using Kustomize
 You can deploy the configuration for each environment using kubectl.
 
 Deploy the dev Environment:
-kubectl apply -k overlays/dev
+kustomize build --enable-helm overlays/dev |kubectl delete -f -
 
 
 Deploy the prod Environment:
-kubectl apply -k overlays/prod
+kustomize build --enable-helm overlays/prod |kubectl delete -f -

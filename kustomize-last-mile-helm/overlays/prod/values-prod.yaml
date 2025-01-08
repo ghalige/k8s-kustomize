@@ -1,5 +1,0 @@
-nginx:
-  image:
-    tag: stable  # Use the "stable" image tag for production
-  replicaCount: 3  # Set replicas to 3 for production
-

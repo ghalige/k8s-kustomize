@@ -1,5 +1,0 @@
-nginx:
-  image:
-    tag: latest
-  replicaCount: 2
-

@@ -8,8 +8,8 @@ resources:
 
 helmCharts:
   - name: opensearch
-    version: 2.6.0
+    version: "2.30.0"
     repo: https://opensearch-project.github.io/helm-charts
     releaseName: opensearch
     namespace: logging
-    valuesFile: values.yaml
+    valuesFile: ./values.yaml

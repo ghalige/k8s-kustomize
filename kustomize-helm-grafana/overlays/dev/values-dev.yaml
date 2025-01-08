@@ -1,0 +1,5 @@
+adminUser: dev-admin
+adminPassword: dev-secret
+service:
+  type: NodePort  # Expose the service with NodePort for dev environment
+replicas: 2  # Single replica for development
